@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorinPure - Herbs</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Favicon Docs-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- OPEN GRAPH TAGS -->
+
+    <meta property="og:type" content="MorinPure">
+    <meta property="og:title" content="Morin-Pure">
+    <meta property="og:url" content="https://fayysstitches.com/">
+    <meta property="og:image" content="/assets/images/moringa-logo.png">
+    <meta property="og:description" content=" Moringa, known as the Miracle Tree, is packed with essential nutrients,
+                antioxidants, and healing properties. From boosting immunity to enhancing overall wellness, our premium
+                Moringa products bring the best of nature to your doorstep.">
+</head>
+
+<body class="bg-gradient-to-r from-white to-green-200">
+    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto sticky">
+            <a href="#" class="flex items-center">
+                <svg class="w-9 h-9 mr-3" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                            fill="#128749"></path>
+                        <path
+                            d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                            fill="#021112"></path>
+                    </g>
+                </svg>
+                <span
+                    class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-[playfair]">MorinPure</span>
+            </a>
+            <div class="flex items-center lg:order-2">
+                <div class="hidden mt-2 mr-4 sm:inline-block">
+                    <span></span>
+                </div>
+
+                <!-- <a href="#"
+                    class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 max-sm:hidden">Contact
+                    Us</a> -->
+                <button data-collapse-toggle="mobile-menu-2" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <!-- <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg> -->
+                </button>
+            </div>
+            <div class="items-end justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About_Us"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#Benefit"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Benefits</a>
+                    </li>
+                    <li>
+                        <a href="#Our_Service"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Our
+                            Service</a>
+                    </li>
+                    <li>
+                        <a href="#Testimonial"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#Faq"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Faq</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-28">
+        <p class="mx-auto -mt-4 mb-2 max-w-2xl text-3xl tracking-tight text-slate-700 sm:mt-6">Welcome to
+            <span class="border-b border-dotted border-slate-300">Moringa Power</span>
+        </p>
+
+        <h1
+            class="mx-auto max-w-4xl font-display font-[playfair] text-2xl font-medium tracking-tight text-slate-900 sm:text-5xl">
+            <span class="inline-block">🌱 Unlock Nature's Superfood
+
+
+                <span class="relative whitespace-nowrap text-green-800">
+                    <svg aria-hidden="true" viewBox="0 0 418 42"
+                        class="absolute top-2/3 left-0 h-[0.58em] w-full fill-slate-900" preserveAspectRatio="none">
+                        <path
+                            d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                        </path>
+                    </svg>
+                    <span class="relative"> - Moringa for </span></span>
+            </span>
+            <span class="inline-block">Health & Vitality</span>
+        </h1>
+
+        <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
+            <span class="inline-block">Moringa, known as the "Miracle Tree," is packed with essential nutrients,
+                antioxidants, and healing properties. From boosting immunity to enhancing overall wellness, our premium
+                Moringa products bring the best of nature to your doorstep.
+            </span>
+            <br>
+            <span class="inline-block">Experience better health today!</span>
+        </p>
+
+        <div class="mt-12 flex flex-col justify-center gap-y-5 sm:mt-10 sm:flex-row sm:gap-y-0 sm:gap-x-6">
+            <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+                href="#">
+                <svg class="w-5 h-5" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                            fill="#128749"></path>
+                        <path
+                            d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                            fill="#021112"></path>
+                    </g>
+                </svg>
+                <span class="ml-3">Try Moringa Today</span>
+            </a>
+            <div class="relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
+                <button
+                    class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-[#128749] active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right"
+                    id="headlessui-menu-button-:r4:" aria-haspopup="true" aria-expanded="false" data-headlessui-state=""
+                    type="button">
+                    <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M3 1L0 4V5C0 5 2 6 4 6C6 6 8 5 8 5C8 5 10 6 12 6C14 6 16 5 16 5V4L13 1H3Z"
+                                fill="#128749"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1 15V7.5187C1.81671 7.76457 2.88168 8 4 8C5.3025 8 6.53263 7.68064 7.38246 7.39737C7.60924 7.32177 7.81664 7.24612 8 7.17526C8.18337 7.24612 8.39076 7.32177 8.61754 7.39737C9.46737 7.68064 10.6975 8 12 8C13.1183 8 14.1833 7.76457 15 7.5187V15H7V10H4V15H1ZM12 10H10V13H12V10Z"
+                                fill="#128749"></path>
+                        </g>
+                    </svg>
+                    <span class="ml-3">
+                        Shop Now</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Us Section -->
+
+    <section class="" id="About_Us">
+        <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                <div class="max-w-lg flex flex-col">
+                    <h2
+                        class=" mb-4 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight text-slate-900">
+                        About Us <span class="text-[#128749]">- Our Story &
+                            Mission</span></h2>
+                    <p class="mt-2 text-gray-600 text-lg">
+                        At <span class="text-xl font-[playfair] font-bold">MorinPure</span> , we are dedicated to
+                        harnessing the power of Moringa to promote
+                        natural
+                        wellness and sustainable health solutions. Sourced from the finest organic farms, our Moringa
+                        products are <span class="text-xl font-[playfair] font-bold">pure, potent, and packed with
+                            nutrition. </span> <br>
+                        Our mission? To <span class="text-xl font-[playfair] font-bold">empower individuals</span> with
+                        nature’s best health remedies while promoting
+                        eco-friendly and ethical farming practices.
+                        <span class="text-xl font-[playfair] font-bold">Join us on this journey toward vitality and
+                            wellness.</span>
+
+                    </p>
+                    <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 mt-5 sm:mx-36 mx-20 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+                        href="#">
+                        <svg class="w-5 h-5" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                                    fill="#128749"></path>
+                                <path
+                                    d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                                    fill="#021112"></path>
+                            </g>
+                        </svg>
+                        <span class="ml-3">Discover Our Story</span>
+                    </a>
+                </div>
+
+                <div class="mt-12 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image"
+                        class="object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <div class="items-center justify-center w-screen min-h-screen sm:max-h-screen p-10" id="Benefit">
+        <h2 class=" mt-6 mb-0 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight
+        text-slate-900">
+            Benefits of <span class="text-[#128749]">Moringa Leave</span></h2>
+        <p class="mx-auto mt-9 mb-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
+            <span class="inline-block">Moringa is a true nutritional powerhouse, providing a wide range of health
+                benefits</span>
+            <br>
+
+        </p>
+        <div class="flex items-center justify-center my-6">
+            <!-- Component Start -->
+            <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
+                <!-- Tile 1 -->
+                <div class="flex flex-col bg-slate-900 rounded-lg p-4 m-2">
+                    <div class="h-40 w-60 sm:w-60 bg-gray-400 rounded-lg"><img
+                            src="https://images.unsplash.com/photo-1667928729816-0ed8c59cd3c9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="moringa-leaf" class="h-40"></div>
+                    <div class="flex flex-col sm:items-start items-center mt-4 text-white font-[playfair]">
+                        <h4 class="text-xl font-semibold">Promotes Heart Health</h4>
+                        <p class="text-sm">Reduces cholesterol & supports circulation.</p>
+                        <a class="p-2 leading-none rounded font-medium mt-3 bg-[#128749] text-xs uppercase"
+                            href="#">Read More</a>
+                    </div>
+                </div>
+                <!-- Tile 2 -->
+                <div class="flex flex-col bg-slate-900 rounded-lg p-4 m-2">
+                    <div class="h-40 w-60 sm:w-60 bg-gray-400 rounded-lg"><img
+                            src="https://media.istockphoto.com/id/1336503106/photo/ground-moringa-and-moringa-tea-on-rustic-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=98c-iGH_fAJgKdFCryeKM1quqM-qAAHtS6Y2mxdGjn0="
+                            alt="moringa-leaf" class="h-40"></div>
+                    <div class="flex flex-col sm:items-start items-center mt-4 text-white font-[playfair]">
+                        <h4 class="text-xl font-semibold">Boosts Immunity</h4>
+                        <p class="text-sm">Rich in antioxidants to fight infections.</p>
+                        <a class="p-2 leading-none rounded font-medium mt-3 bg-[#128749] text-xs uppercase"
+                            href="#">Read More</a>
+                    </div>
+                </div>
+                <!-- Tile 3 -->
+                <div class="flex flex-col bg-slate-900 rounded-lg p-4 m-2">
+                    <div class="h-40 w-60 sm:w-60 bg-gray-400 rounded-lg"><img
+                            src="https://media.istockphoto.com/id/2205135515/photo/unhappy-woman-grimaces-not-sure-in-prescription-taking-pills-for-severe-depression-sick-days.webp?a=1&b=1&s=612x612&w=0&k=20&c=a4yuzqBOgn89eBHkEyY1Mtq0H4MkAIAsPihO0sz49wM="
+                            alt="moringa-leaf" class="h-40"></div>
+                    <div class="flex flex-col sm:items-start items-center mt-4 text-white font-[playfair]">
+                        <h4 class="text-xl font-semibold">Enhances Energy & Focus</h4>
+                        <p class="text-sm">Natural source of iron & B vitamins.</p>
+                        <a class="p-2 leading-none rounded font-medium mt-3 bg-[#128749] text-xs uppercase"
+                            href="#">Read More</a>
+                    </div>
+                </div>
+                <!-- Tile 4 -->
+                <div class="flex flex-col bg-slate-900 rounded-lg p-4 m-2">
+                    <div class="h-40 w-60 sm:w-60 bg-gray-400 rounded-lg"><img
+                            src="https://media.istockphoto.com/id/1335399967/photo/moringa-oleifera-powder-and-pills-on-rustic-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=-FGsIfwIOFvQz4B1Ti177bzMDZKYLL0ObW9EeIkQ7ws="
+                            alt="moringa-leaf" class="h-40"></div>
+                    <div class="flex flex-col sm:items-start items-centert mt-4 text-white font-[playfair]">
+                        <h4 class="text-xl font-semibold">Balances Blood Sugar</h4>
+                        <p class="text-sm">Helps regulate glucose levels.</p>
+                        <a class="p-2 leading-none rounded font-medium mt-3 bg-[#128749] text-xs uppercase"
+                            href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Component End  -->
+    </div>
+
+    <!-- Service Section -->
+
+    <div class="mb-16" id="Our_Service">
+        <h2
+            class=" mt-6 mb-0 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight text-slate-900">
+            Our <span class="text-[#128749]">Services</span>
+        </h2>
+        <p
+            class="flex mx-auto mt-9 mb-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6 items-center justify-center">
+            <span class="inline-block text-center">We offer premium Moringa solutions to elevate your health
+                naturally</span>
+        </p>
+        <div class="grid md:grid-cols-4 max-w-screen-lg mx-auto gap-10 mt-16 px-5 mb-10">
+
+            <div class="flex gap-4 sm:items-start items-center flex-col bg-slate-900 px-8 py-4 rounded">
+                <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full mx-auto"> <svg class="w-5 h-5"
+                        viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                                fill="#128749"></path>
+                            <path
+                                d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                                fill="#021112"></path>
+                        </g>
+                    </svg></span>
+                <div class="text-white font-[playfair] max-sm:text-center">
+                    <h3 class="font-semibold text-lg">Organic Moringa Powder & Capsules
+                    </h3>
+                    <p class="mt-5 text-sm"> 100% pure & nutrient-dense.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-4 sm:items-start items-center flex-col bg-slate-900 px-8 py-4 rounded">
+                <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full mx-auto"> <svg class="w-5 h-5"
+                        viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                                fill="#128749"></path>
+                            <path
+                                d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                                fill="#021112"></path>
+                        </g>
+                    </svg></span>
+                <div class="text-white font-[playfair] max-sm:text-center">
+                    <h3 class="font-semibold text-lg">Moringa Tea & Beverages
+                    </h3>
+                    <p class="mt-5 text-sm"> Delicious, refreshing, and immunity-boosting.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-4 sm:items-start items-center flex-col bg-slate-900 px-8 py-4 rounded">
+                <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full mx-auto"> <svg class="w-5 h-5"
+                        viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                                fill="#128749"></path>
+                            <path
+                                d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                                fill="#021112"></path>
+                        </g>
+                    </svg></span>
+                <div class="text-white font-[playfair] max-sm:text-center">
+                    <h3 class="font-semibold text-lg">Moringa Beauty & Skincare
+                    </h3>
+                    <p class="mt-5 text-sm"> Radiate naturally with our enriched skincare products.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-4 sm:items-start items-center flex-col bg-slate-900 px-8 py-4 rounded">
+                <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full mx-auto"> <svg class="w-5 h-5"
+                        viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                                fill="#128749"></path>
+                            <path
+                                d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                                fill="#021112"></path>
+                        </g>
+                    </svg></span>
+                <div class="text-white font-[playfair] max-sm:text-center">
+                    <h3 class="font-semibold text-lg">Wholesale & Bulk Supply
+                    </h3>
+                    <p class="mt-5 text-sm"> For businesses, distributors, and retail.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Testimonial Section -->
+
+    <section id="Testimonial" class="py-10 lg:py-10">
+        <div class="container mx-auto">
+            <h2
+                class=" mt-1 mb-7 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight text-slate-900">
+                Testimonial<span class="text-[#128749]"> - Real Stories from Happy Customer</span>
+            </h2>
+            <div class="flex flex-col md:flex-row md:-mx-3 pt-8">
+                <div class="flex-1 px-3">
+                    <div class="p-8 rounded-lg border-2 border-solid border-[#128749] mb-8"
+                        style="box-shadow:0 10px 28px rgba(0,0,0,.08)">
+                        <!-- <p class="text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing</p> -->
+                        <p class="mt-2 text-xl font-[playfair]">I’ve been using <span
+                                class="semibold text-[#128749]">Moringa tea</span> for months,
+                            and my energy
+                            levels are <span class="semibold text-[#128749]">off the charts!</span>
+                            No more fatigue—just pure stamina!
+                        </p>
+                        <div class="flex items-center mt-8"><img class="w-12 h-12 mr-4 rounded-full"
+                                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fHww"
+                                alt="Adekunle O.">
+                            <div>
+                                <p class="font-[HankenGrotesk] bold text-xl">Adekunle F.
+                                </p>
+                                <p class="text-sm text-gray-600">Gym Experts
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 px-3">
+                    <div class="p-8 rounded-lg border-2 border-solid border-[#128749] mb-8"
+                        style="box-shadow:0 10px 28px rgba(0,0,0,.08)">
+                        <!-- <p class="text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        </p> -->
+                        <p class="mt-2 text-xl font-[playfair]">My <span class="font-semibold text-[#128749]">skin has
+                                transformed!</span>
+                            Moringa oil works wonders—it
+                            hydrates and keeps my <span class="semibold text-[#128749]"> skin glowing</span>
+                            naturally.</p>
+                        <div class="flex items-center mt-8"><img class="w-12 h-12 mr-4 rounded-full"
+                                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+                                alt="Chuka O.">
+                            <div>
+                                <p class="font-[HankenGrotesk] bold text-xl">Chuka O.
+                                </p>
+                                <p class="text-sm text-gray-600">Skin Care Expert
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 px-3">
+                    <div class="p-8 rounded-lg border-2 border-solid border-[#128749] mb-8"
+                        style="box-shadow:0 10px 28px rgba(0,0,0,.08)">
+                        <!-- <p class="text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                        </p> -->
+                        <p class="mt-2 text-xl font-[playfair]">Moringa powder is <span
+                                class="font-semibold text-[#128749]">my daily must-have!</span> I feel healthier,
+                            more focused, and my
+                            digestion has <span class="font-semibold text-[#128749]">never been better!</span></p>
+                        <div class="flex items-center mt-8"><img class="w-12 h-12 mr-4 rounded-full"
+                                src="https://images.unsplash.com/photo-1701615004837-40d8573b6652?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyJTIwZmVtYWxlfGVufDB8fDB8fHww"
+                                alt="Amanda k.">
+                            <div>
+                                <p class="font-[HankenGrotesk] bold text-xl">Amanda K.
+                                </p>
+                                <p class="text-sm text-gray-600">Hair Stylist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq Section -->
+
+    <section class="container mx-auto px-4 py-12 max-w-4xl mb-8" id="Faq">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h2
+                class=" mt-6 mb-0 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight text-slate-900">
+                Frequently <span class="text-[#128749]">Asked Questions</span>
+            </h2>
+            <p
+                class="flex mx-auto mt-9 mb-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6 items-center justify-center">
+                <span class="inline-block text-center">Find answers to common questions about our products and
+                    services.</span>
+            </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                    <h3 class="text-xl text-gray-800 font-[playfair]">Is Moringa safe for daily use?</h3>
+                    <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-6 hidden">
+                    <p class="text-gray-600 text-lg font-[HankenGrotesk]">
+                        Absolutely! It’s packed with nutrients that support long-term health and wellness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                    <h3 class="text-xl text-gray-800 font-[playfair]">Does Moringa help with weight loss?</h3>
+                    <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-6 hidden">
+                    <p class="text-gray-600 text-lg font-[HankenGrotesk]">
+                        Yes! Moringa supports digestion, metabolism, and fat breakdown naturally.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                    <h3 class="text-xl text-gray-800 font-[playfair]">How do I consume Moringa?</h3>
+                    <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-6 hidden">
+                    <p class="text-gray-600 text-lg font-[HankenGrotesk]">
+                        You can take powder, capsules, tea, or use Moringa oil for skincare!
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                    <h3 class="text-xl text-gray-800 font-[playfair]">Where do you source your Moringa??</h3>
+                    <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-6 hidden">
+                    <p class="text-gray-600 text-lg font-[HankenGrotesk]">
+                        We source from certified organic farms, ensuring quality and purity
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                    <h3 class="text-xl text-gray-800 font-[playfair]">Is Moringa safe for daily use?</h3>
+                    <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-6 hidden">
+                    <p class="text-gray-600 text-lg font-[HankenGrotesk]">
+                        To create an account, click on the "Sign Up" button at the top right corner of our website.
+                        You'll need to provide your email address, create a password, and fill in some basic
+                        information.
+                        After verification, your account will be ready to use.
+                    </p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Contact Support -->
+        <div class="mt-16 text-center bg-indigo-50 rounded-xl p-8">
+            <h2
+                class=" mt-6 mb-0 text-center font-display font-[playfair] text-2xl sm:text-3xl font-medium tracking-tight text-slate-900">
+                Still <span class="text-[#128749]">have questions?</span></h2>
+            <p class="text-gray-600 mb-6">Our support team is happy to help you with any other questions you might have.
+            </p>
+
+
+
+
+
+
+            <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+                href="#">
+                <svg class="w-5 h-5" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                            fill="#128749"></path>
+                        <path
+                            d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                            fill="#021112"></path>
+                    </g>
+                </svg>
+                <span class="ml-3">Contact Support</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-100/80 font-[HankenGrotesk] dark:bg-gray-900">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                <div class="sm:col-span-2">
+                    <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
+                        Subscribe our newsletter to get an update.</h1>
+
+                    <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+                        <input id="email" type="text"
+                            class="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                            placeholder="Email Address" />
+
+                        <button
+                            class="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-[#128749] focus:ring-opacity-80">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+
+                    <div class="flex flex-col items-start mt-5 space-y-2">
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Home</p>
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Who We Are</p>
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Our Philosophy</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="font-semibold text-gray-800 dark:text-white">Industries</p>
+
+                    <div class="flex flex-col items-start mt-5 space-y-2">
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Retail & E-Commerce</p>
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Information Technology</p>
+                        <p
+                            class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-[#128749] hover:underline hover:cursor-pointer hover:text-blue-500">
+                            Finance & Insurance</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
+
+            <div class="sm:flex sm:items-center sm:justify-between sm:mx-16">
+                <div class="flex flex-1 gap-4 hover:cursor-pointer">
+                    <img src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="130" height="110"
+                        alt="" />
+                    <img src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" width="130"
+                        height="110" alt="" />
+                </div>
+
+                <div class="flex gap-4 hover:cursor-pointer">
+                    <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30"
+                        alt="fb" />
+                    <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" width="30" height="30" alt="tw" />
+                    <img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" width="30" height="30"
+                        alt="inst" />
+                    <img src="https://www.svgrepo.com/show/22037/path.svg" width="30" height="30" alt="pn" />
+                    <img src="https://www.svgrepo.com/show/28145/linkedin.svg" width="30" height="30" alt="in" />
+                </div>
+            </div>
+            <p class="font-[playfair] text-white p-8 text-start md:text-center md:text-lg md:p-4">&copy; <span
+                    id="year"></span> MorinPure Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
