@@ -4,7 +4,11 @@ module.exports = {
     "./index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'only-md': { 'min': '768px', 'max': '1023px' },
+      },
+    },
   },
   plugins: [],
 }
